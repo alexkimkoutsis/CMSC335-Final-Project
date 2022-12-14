@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="code.js" defer></script>
+    <title> Freestyle Rap Generator</title>
+</head>
+
+<body>
+    <div id="box"> 
+        <h1>Freestyle Rap Generator</h1>
+        
+        <h3>Welcome to my Freestyle Rap Generator! Here you can find rhymes quickly. </h3><hr>
+
+        <div class ="search"> 
+            <form method="get" action="/getRhymes">
+                Would you like to <a href="/getRhymes">get rhymes?</a>
+                    <input type="text" name="word" autofocus> 
+                    <input type="submit" value="Submit Word" class="button">
+            </form> 
+        </div>
+        
+        <br>
+        <div class="search"> 
+            Would you like to <a href="/wordsSearched"> see what words users have looked up?</a> <br>
+        </div>
+        
+        <hr>
+        <p id="bottom">
+            Enjoy your rapping. Sincerely, Alex.
+        </p>
+    </div>
+    
+</body>
+
+</html>

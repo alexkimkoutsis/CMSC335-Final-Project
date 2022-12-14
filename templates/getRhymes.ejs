@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> Freestyle Rap Generator</title>
+</head>
+
+<body>
+    <h1>Freestyle Rap Generator</h1>
+    
+    <div class="search">
+        <form method="get" action="/getRhymes">
+            <p>
+                <b> Select Word: </b><input type="text" name="word" autofocus> 
+                <input type="reset" value="Reset" class="button">
+                <input type="submit" value="Submit Word" class="button">
+            </p>
+            <a href="/home">Return to Home Page</a>
+
+        </form>
+    </div>
+    
+
+    <h3>Your word was: <%= baseWord %></h3>
+
+    <b>Rhymes:</b>
+    <table border="1">
+        <tr>
+          <th>Word</th><th>Rhyme Score</th>
+        </tr>
+      
+        <% for (var i = 0; i < data.length; i++) { %>
+          <tr>
+            <td><%= data[i].word %></td>
+            <td><%= data[i].score %></td>
+          </tr>    
+        <% } %>
+      </table>
+
+    <br>
+    <hr>
+    
+</body>
+
+</html>

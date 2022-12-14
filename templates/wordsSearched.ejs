@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title> Freestyle Rap Generator</title>
+</head>
+
+<body>
+    <h1>Words Searched</h1>
+    
+    Here's a list of rhymes that people have searched before! <a href="/clearWords">CLEAR ALL WORDS</a> <br><br>
+    <a href="/home">Return to Home Page</a><br><br>
+    <b>Words:</b> <br> 
+    <table border="1">
+      
+        <% for (var i = 0; i < data.length; i++) { %>
+          <tr>
+            <td><%= data[i].rhyme %></td>
+          </tr>    
+        <% } %>
+      </table>
+
+    <br>
+    <hr>
+    
+</body>
+
+</html>
