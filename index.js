@@ -40,7 +40,7 @@ app.get("/", (request, response) => {
  });
  
  app.get("/home", (request, response) => {
-    response.redirect(`http://localhost:${portNumber}`);
+    response.redirect(`/`);
  });
 
 app.get("/getRhymes", async (request, response) => {
